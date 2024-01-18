@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bildeserie med tekst</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- <script src="/js/MPage.js"></script> -->
+  <script src="/js/test.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li id="home"><a href="/">Home</a></li>
+          <li id="contact"><a href="#">Contact</a></li>
+          <li id="admin"><a href="/login">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <div class="slideshow-container">
+    <div class="slides">
+      <div class="slide">
+        <img id="myImage" src="/img/bilde1.jpg" alt="Bilde 1">
+        <div class="text">Tekst for bilde 1</div>
+      </div>
+      <!-- <div class="slide">
+        <img src="/img/bilde2.jpg" alt="Bilde 2">
+        <div class="text">Tekst for bilde 2</div>
+      </div>
+      <div class="slide">
+        <img src="/img/bilde3.jpg" alt="Bilde 3">
+        <div class="text">Tekst for bilde 3</div>
+      </div> -->
+      <!-- Theodor her kan du legge til flere bilder hvis du ikke er dum og ikke vet hvordan -->
+    </div>
+    <!-- <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a> -->
+    <a class="prev" onclick="changeImageDn()">&#10094;</a>
+    <a class="next" onclick="changeImage()">&#10095;</a>
+  </div>
+
+</body>
+</html>
