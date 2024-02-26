@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Bildeserie med tekst</title>
   <link rel="stylesheet" href="/css/styles.css">
-  <!-- <script src="/js/MPage.js"></script> -->
-  <script src="/js/test.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"  crossorigin="anonymous" defer ></script>
+  <script src="/js/MPage.js" defer ></script>
 </head>
 <body>
 
@@ -23,23 +23,21 @@
     <div class="slides">
       <div class="slide">
         <img id="myImage" src="/img/bilde1.jpg" alt="Bilde 1">
-        <div class="text">Tekst for bilde 1</div>
+        <pre class="text" id="fileContent"></pre>
+        <div class="værInf">
+          <p>Været i <span id="city"></span></p>
+          <p>Temperatur: <span id="temperature"></span> °C</p>
+          <p>Værforhold: <span id="weatherCondition"></span></p>
+        </div>
       </div>
-      <!-- <div class="slide">
-        <img src="/img/bilde2.jpg" alt="Bilde 2">
-        <div class="text">Tekst for bilde 2</div>
-      </div>
-      <div class="slide">
-        <img src="/img/bilde3.jpg" alt="Bilde 3">
-        <div class="text">Tekst for bilde 3</div>
-      </div> -->
-      <!-- Theodor her kan du legge til flere bilder hvis du ikke er dum og ikke vet hvordan -->
     </div>
-    <!-- <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a> -->
     <a class="prev" onclick="changeImageDn()">&#10094;</a>
     <a class="next" onclick="changeImage()">&#10095;</a>
   </div>
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </body>
 </html>
